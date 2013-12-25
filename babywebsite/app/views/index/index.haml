@@ -1,13 +1,14 @@
+.navi
+	%ul
+		%li
+			Dairy
+		%li
+			Photo
+		%li
+			Video
+		%li
+			Calendar
 .content
-	.navi
-		%ul
-			%li
-				Dairy
-			%li
-				Photo
-			%li
-				Video
-			%li
-				Calendar
 	.updates
-		.update
+		- @tweets.each do |tweet|
+			= render :partial => 'tweet', :locals => {tweet: tweet}

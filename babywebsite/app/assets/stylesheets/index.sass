@@ -2,18 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body
-	background: lightgoldenrodyellow
-.content
-	width: 900px
-	margin-left: auto
-	margin-right: auto
-	background: snow
-	box-shadow: 2px 0px 10px 2px rgba(0,0,0,0.2)
+	margin: 0px
+	background: url('background/floor.jpg')
 	.navi
+		background: url('background/navi-bg.jpg')
 		font-family: Comic Sans MS
 		position: fixed
-		background: beige
-		width: 900px
+		width: 100%
+		color: snow
 		ul
 			padding: 0px
 			text-align: center
@@ -21,9 +17,28 @@ body
 				display: inline-block
 				margin-left: 10px
 				margin-right: 10px
-	.updates
-		width: 900px
-		height: 2000px
-		.update
+	.content
+		.updates
 			width: 900px
-			height: 200px
+			margin-left: auto
+			margin-right: auto
+			padding-top: 65px
+			.update
+				background: rgba(255,250,250,0.6)
+				box-shadow: 2px 0px 10px 2px rgba(0,0,0,0.2)
+				padding: 5px 20px 5px 20px
+				font-family: Comic Sans MS
+
+.post-title
+	font-weight: bold
+	font-size: 1.5em
+	display: inline-block
+	vertical-align: top
+	margin-right: 10px
+.post-author
+	display: inline-block
+	font-size: 0.9em
+	color: darkgray
+	vertical-align: top
+.post-content
+	font-size: 0.8em
